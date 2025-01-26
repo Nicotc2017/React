@@ -1,0 +1,50 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ffffff, #ff0000); /* Gradient background */
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 5px; /* Rounded corners */
+}
+/* Navbar Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Added transform transition */
+}
+/* Hover Effects */
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  color: #fff;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .navbar a {
+      padding: 10px 20px;
+      width: 100%;
+      text-align: left;
+  }
+}
+
+.my-image{
+  width: 400px;
+}
+.fa-brands {
+  font-size: 22px;
+  margin-left: 10px;
+}
